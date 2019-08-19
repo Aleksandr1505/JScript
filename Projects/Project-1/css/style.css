@@ -6,13 +6,41 @@
     padding: 0;
 }
 
+.first-button {
+  border: 0;
+  width: 100px;
+  height: 100px;
+  font-family: 18px;
+}
+
+.modal-form.is-open {
+  visibility: visible;
+}
+
 .modal-form {
   margin: 0;
   padding: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
   padding-top: 60px;
   width: 360px;
   height: 360px;
   background-color: #77c1bb;
+  visibility: hidden;
+}
+
+.modal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1024px;
+  height: 100vh;
+  visibility: hidden;
+}
+
+.modal-overlay.is-open {
+  visibility: visible;
 }
 
 .modal-form__image {
@@ -115,18 +143,20 @@
 
 @media (min-width: 1024px) {
   .modal-overlay {
-    position: relative;
+    position: absolute;
     top: 0;
     left: 0;
     width: 1024px;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.6);
+    visibility: hidden;
+  }
+
+  .modal-overlay.is-open {
+    visibility: visible;
   }
 
   .modal-form {
-    position: absolute;
-    top: 0;
-    left: 0;
     padding-top: 100px;
     width: 1024px;
     height: 620px;
