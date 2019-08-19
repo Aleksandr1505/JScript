@@ -1,9 +1,9 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .first-button {
@@ -107,6 +107,34 @@
   background-color: #77c1bb;
 }
 
+.modal-form__button {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background-color: transparent;
+  fill: #fff;
+  cursor: pointer;
+  outline: none;
+}
+
+.modal-form__button--elem {
+  width: 20px;
+  height: 20px;
+  fill: #fff;
+  background-color: #77c1bb;
+}
+
+.modal-form__button:hover > .modal-form__button--elem,
+.modal-form__button:focus > .modal-form__button--elem {
+  fill: #fce38a;
+}
+
 @media (min-width: 768px) {
   .modal-form {
     width: 768px;
@@ -143,8 +171,12 @@
   .search-form__button {
     visibility: hidden;
   }
-}
 
+  .modal-form__button--elem {
+    width: 16px;
+    height: 16px;
+  }
+}
 @media (min-width: 1024px) {
   .modal-overlay {
     width: 1024px;
@@ -185,8 +217,5 @@
 
   .search-form__field {
     width: 300px;
-}
-
-
-
+  }
 }

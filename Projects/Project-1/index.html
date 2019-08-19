@@ -8,11 +8,14 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-  <!-- <div class="modal"> -->
-  <button class="first-button">Press</button>
-  <div class="modal-overlay"></div>
+    <button class="first-button">Press</button>
+    <div class="modal-overlay"></div>
     <div class="modal-form">
-      <img class="modal-form__image" src="./img/moogle-logo-modal.png" alt="moogle-logo" />
+      <img
+        class="modal-form__image"
+        src="./img/moogle-logo-modal.png"
+        alt="moogle-logo"
+      />
       <p class="modal-form__text">Mooogle</p>
       <form class="search-form">
         <svg class="search-form__picture">
@@ -30,8 +33,17 @@
           </svg>
         </button>
       </form>
+
+      <button
+        type="button"
+        class="modal-form__button"
+        data-action="close-modal-form"
+      >
+        <svg class="modal-form__button--elem">
+          <use href="img/cross-modal.svg#icon-modal-cross"></use>
+        </svg>
+      </button>
     </div>
     <script src="./js/index.js"></script>
-    <!-- </div> -->
   </body>
 </html>
