@@ -24,7 +24,7 @@
   top: 0;
   left: 0;
   padding-top: 60px;
-  width: 360px;
+  width: 100%;
   height: 360px;
   background-color: #77c1bb;
   visibility: hidden;
@@ -34,7 +34,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 360px;
+  width: 100%;
   height: 100vh;
   visibility: hidden;
 }
@@ -137,14 +137,8 @@
 
 @media (min-width: 768px) {
   .modal-form {
-    width: 768px;
     height: 370px;
   }
-
-  .modal-overlay {
-    width: 768px;
-  }
-
   .modal-form__text {
     font-size: 24px;
     font-weight: 600;
@@ -182,13 +176,11 @@
 }
 @media (min-width: 1024px) {
   .modal-overlay {
-    width: 1024px;
     background-color: rgba(0, 0, 0, 0.6);
   }
 
   .modal-form {
     padding-top: 100px;
-    width: 1024px;
     height: 620px;
   }
 
