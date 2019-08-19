@@ -78,7 +78,7 @@
 
 .search-form__field {
   border: 0;
-  width: 184px;
+  width: 190px;
   padding-left: 10px;
   font-family: "Roboto";
   font-size: 18px;
@@ -158,7 +158,9 @@
     width: 280px;
     border-bottom: 2px solid #ffffff;
   }
+
   .search-form__field {
+    width: 242px;
     padding-left: 15px;
   }
 
@@ -168,10 +170,11 @@
     height: 15px;
   }
 
-  .search-form__button {
-    visibility: hidden;
+  .search-form__button--elem {
+    padding-top: 2px;
+    width: 18px;
+    height: 18px;
   }
-
   .modal-form__button--elem {
     width: 16px;
     height: 16px;
@@ -216,6 +219,6 @@
   }
 
   .search-form__field {
-    width: 300px;
+    width: 382px;
   }
 }
