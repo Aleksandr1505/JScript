@@ -17,14 +17,14 @@
         alt="moogle-logo"
       />
       <p class="modal-form__text">Mooogle</p>
-      <form class="search-form">
+      <form class="search-form" id="modal-search-form">
         <svg class="search-form__picture">
           <use href="img/modal-defs.svg#icon-search-modal"></use>
         </svg>
         <input
           class="search-form__field"
           type="text"
-          name="search"
+          name="mdsearch"
           placeholder="Search"
         />
         <button class="search-form__button">
@@ -45,5 +45,7 @@
       </button>
     </div>
     <script src="./js/index.js"></script>
+    <script src="./js/fetch/fetch.js"></script>
+    <script src="./js/fetch/function.js"></script>
   </body>
 </html>
